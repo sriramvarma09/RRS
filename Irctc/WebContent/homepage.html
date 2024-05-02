@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="homepage.js"></script>
+    <title>Train Booking System</title>
+    <style>
+        /* Basic CSS for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .option {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body onload='checkLogin()'>
+
+<header>
+    <h1>Train Booking System</h1>
+    <div id="login" onClick="login()">Login</div>
+</header>
+
+<main>
+    <div class="options" >
+        <div class="option" onClick="viewTrains()">
+            <h2 >View Trains</h2>
+            <p>Explore available trains</p>
+        </div>
+        <div class="option" onClick="bookTickets()">
+            <h2 >Book Tickets</h2>
+            <p>Reserve your seats</p>
+        </div>
+    </div>
+</main>
+
+
+
+   
+</body>
+</html>
